@@ -1,14 +1,18 @@
 /* General Styles */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 15x 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* White background */
+  padding: 15px 20px;
+  color: black;
+  border-radius: 10px;  
+  cursor: pointer;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 .nv-logo {
   background-image: url('../assets/logo1.png');
+  font-weight: bold;
 }
 .logo-container {
     display: flex;
@@ -24,7 +28,7 @@ nav {
 
   
   .button {
-    color: white;
+    color: #555;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 5px;
@@ -33,11 +37,11 @@ nav {
   }
   
   .button:hover {
-    background-color: #555;
+    background-color: #c2bcbc;
   }
   
   .activebutton {
-    background-color: #007bff;
+    background-color: #555;
   }
   
   /* Menu Container */

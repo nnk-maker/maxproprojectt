@@ -7,7 +7,7 @@
   </div>
    <!-- Toggle Button for Mobile -->
    <button class="mobile-menu-toggle" (click)="toggleMobileMenu()">☰</button>
-   <!-- Single Menu Container <button class="close-button" (click)="toggleMobileMenu()">×</button> -->
+    <!-- Single Menu Container <button class="close-button" (click)="toggleMobileMenu()">×</button> -->
   <div class="menu" [ngClass]="{ 'show': isMobileMenuOpen }">
     <button class="close-button" (click)="toggleMobileMenu()">X</button>    
     <a class="button"
@@ -15,25 +15,25 @@
      routerLinkActive="activebutton"
      ariaCurrentWhenActive="page">
     Home
-  </a> |
+  </a> 
   <a class="button"
      routerLink="/heroes-list"
      routerLinkActive="activebutton"
      ariaCurrentWhenActive="page">
     Service
-  </a>  |
+  </a>  
   <a class="button"
      routerLink="/about"
      routerLinkActive="activebutton"
      ariaCurrentWhenActive="page">
     Aboutinfo
-  </a>  |
+  </a>  
   <a class="button"
      routerLink="/contact"
      routerLinkActive="activebutton"
      ariaCurrentWhenActive="page">
     contact
-  </a>  |
+  </a>  
         <a class="button"
         routerLink="/menu"
         routerLinkActive="activebutton"
