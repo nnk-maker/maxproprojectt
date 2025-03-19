@@ -48,6 +48,7 @@ nav {
   .menu {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;                      /* justify-content: flex-end;Push menu items to the right */
     flex: 1;
   }
 
@@ -91,15 +92,30 @@ nav {
         position: fixed;
         top: 0;
         right: -100%; /* Start off-screen to the right */
-        background-color: #444;
+        background-color: #333; /* Or any other color that provides better contrast */
         transition: right 0.3s ease; /* Smooth slide-in effect */
         z-index: 1000; /* Ensure it appears above other content */
+        justify-content: flex-start; /* Align items from the top */
+        padding-top: 60px; /* Add padding below the fixed navbar */
     } 
   
     .menu.show {
       right: 0; /* Show menu when 'show' class is applied */
       border: 2px solid whitesmoke; 
+      background-color: #333; /* Ensure consistent background when shown */
     }  
+
+    .menu a.button { /* Style the links within the mobile menu */
+      color: white; /* Set link color to white for contrast */
+      margin: 5px 10; /* Add vertical spacing between links */
+      padding: 5px 10px; /* Adjust padding for better touch targets */
+      display: block; /* Make each link take full width */
+      text-align: left; /* Align text to the left */
+    }
+  
+    .menu a.button:hover {
+      background-color: #555; /* Darker background on hover */
+    }
   
    .close-button {
       display: block; /* Show close button on mobile */
